@@ -9,6 +9,7 @@ function setFormSubmissionEventHandler() {
   form.onsubmit = function(event) {
     event.preventDefault();
     getUserInput();
+    form.reset();
     document.querySelector("div#response").removeAttribute("class");
   }
 }
